@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CACFFE24-B467-4A89-90EF-9BF5E691F208}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>w1626661</RootNamespace>
+    <AssemblyName>w1626661</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ContactView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContactView.Designer.cs">
+      <DependentUpon>ContactView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardView.Designer.cs">
+      <DependentUpon>DashboardView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBconnection.cs" />
+    <Compile Include="ContactcreateFormView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContactcreateFormView.Designer.cs">
+      <DependentUpon>ContactcreateFormView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dynamic\ContactDisplayController.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="dynamic\ContactDisplayController.Designer.cs">
+      <DependentUpon>ContactDisplayController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dynamic\ContactFormController.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="dynamic\ContactFormController.Designer.cs">
+      <DependentUpon>ContactFormController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dynamic\EventDisplayController.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="dynamic\EventDisplayController.Designer.cs">
+      <DependentUpon>EventDisplayController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dynamic\EventFormController.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="dynamic\EventFormController.Designer.cs">
+      <DependentUpon>EventFormController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dynamic\EventSummaryViewController.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="dynamic\EventSummaryViewController.Designer.cs">
+      <DependentUpon>EventSummaryViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dynamic\RoundButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dynamic\RoundedPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dynamic\RoundedPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="enums\EventVareityEnum.cs" />
+    <Compile Include="EventcreateFormView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventcreateFormView.Designer.cs">
+      <DependentUpon>EventcreateFormView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventCreateFormViewNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventCreateFormViewNew.Designer.cs">
+      <DependentUpon>EventCreateFormViewNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventView.Designer.cs">
+      <DependentUpon>EventView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFormView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFormView.Designer.cs">
+      <DependentUpon>LoginFormView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="model\ContactModel.cs" />
+    <Compile Include="model\ContactModelManager.cs" />
+    <Compile Include="model\EventModel.cs" />
+    <Compile Include="model\EventModelManager.cs" />
+    <Compile Include="model\PredictionModelManager.cs" />
+    <Compile Include="model\UserModel.cs" />
+    <Compile Include="model\UserModelManager.cs" />
+    <Compile Include="PredictionTimeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PredictionTimeView.Designer.cs">
+      <DependentUpon>PredictionTimeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterFormView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterFormView.Designer.cs">
+      <DependentUpon>RegisterFormView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ContactView.resx">
+      <DependentUpon>ContactView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboardView.resx">
+      <DependentUpon>DashboardView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContactcreateFormView.resx">
+      <DependentUpon>ContactcreateFormView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dynamic\ContactDisplayController.resx">
+      <DependentUpon>ContactDisplayController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dynamic\ContactFormController.resx">
+      <DependentUpon>ContactFormController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dynamic\EventDisplayController.resx">
+      <DependentUpon>EventDisplayController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dynamic\EventFormController.resx">
+      <DependentUpon>EventFormController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dynamic\EventSummaryViewController.resx">
+      <DependentUpon>EventSummaryViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventcreateFormView.resx">
+      <DependentUpon>EventcreateFormView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventCreateFormViewNew.resx">
+      <DependentUpon>EventCreateFormViewNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventView.resx">
+      <DependentUpon>EventView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFormView.resx">
+      <DependentUpon>LoginFormView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PredictionTimeView.resx">
+      <DependentUpon>PredictionTimeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RegisterFormView.resx">
+      <DependentUpon>RegisterFormView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EAD_w1626661.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EAD_w1626661_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>EAD_w1626661.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
