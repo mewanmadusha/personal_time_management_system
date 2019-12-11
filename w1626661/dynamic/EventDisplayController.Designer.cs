@@ -46,7 +46,9 @@
             this.lblDescription = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lblContact = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel2.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -65,11 +67,12 @@
             // lblVareity
             // 
             this.lblVareity.AutoSize = true;
+            this.lblVareity.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblVareity.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVareity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(254)))));
             this.lblVareity.Location = new System.Drawing.Point(119, 69);
             this.lblVareity.Name = "lblVareity";
-            this.lblVareity.Size = new System.Drawing.Size(100, 19);
+            this.lblVareity.Size = new System.Drawing.Size(340, 30);
             this.lblVareity.TabIndex = 1;
             this.lblVareity.Text = "Appointment";
             this.lblVareity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -170,7 +173,7 @@
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 6);
             this.tableLayoutPanel2.Controls.Add(this.lblDescription, 1, 5);
             this.tableLayoutPanel2.Controls.Add(this.label3, 0, 5);
-            this.tableLayoutPanel2.Controls.Add(this.lblContact, 1, 6);
+            this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel1, 1, 6);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -180,8 +183,8 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 52F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 58F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 47F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
@@ -254,7 +257,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(254)))));
-            this.label2.Location = new System.Drawing.Point(4, 257);
+            this.label2.Location = new System.Drawing.Point(4, 245);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 19);
             this.label2.TabIndex = 5;
@@ -291,12 +294,23 @@
             // lblContact
             // 
             this.lblContact.AutoSize = true;
+            this.lblContact.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblContact.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContact.Location = new System.Drawing.Point(119, 257);
+            this.lblContact.Location = new System.Drawing.Point(3, 0);
             this.lblContact.Name = "lblContact";
             this.lblContact.Size = new System.Drawing.Size(65, 19);
             this.lblContact.TabIndex = 12;
             this.lblContact.Text = "contact";
+            this.lblContact.Click += new System.EventHandler(this.lblContact_Click);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.lblContact);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(119, 248);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(340, 42);
+            this.flowLayoutPanel1.TabIndex = 13;
             // 
             // EventDisplayController
             // 
@@ -307,6 +321,8 @@
             this.Size = new System.Drawing.Size(463, 369);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -330,5 +346,6 @@
         public RoundButton btnDeleteEvent;
         public System.Windows.Forms.Label lblRecurVareity;
         public System.Windows.Forms.Label lblContact;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

@@ -13,6 +13,9 @@ using w1626661.model;
 
 namespace w1626661
 {
+    //this form is to create events 
+    //user able to genarate create form according to dynamically
+    
     public partial class EventCreateFormViewNew : Form
     {
         UserModel loggedInUser;
@@ -105,6 +108,7 @@ namespace w1626661
 
                         {
                             List<ContactModel> pickedContactsList = new List<ContactModel>();
+                           
                             Console.WriteLine("daily");
                             Console.WriteLine("event vareity=" + event_type + "  recuring Vareity=" + recuring_vareity);
 
@@ -151,7 +155,7 @@ namespace w1626661
                         for (int i = 0; i < recurring_time; i++)
                         {
                             List<ContactModel> pickedContactsList = new List<ContactModel>();
-
+                           
 
                             Console.WriteLine("event vareity=" + recuring_vareity + "  recuring Vareity=" + recurring_time);
 
@@ -195,7 +199,7 @@ namespace w1626661
                     if (recuring_vareity == 1)
                     {
                         List<ContactModel> pickedContactsList = new List<ContactModel>();
-
+                        
                         Console.WriteLine("event vareity=" + recuring_vareity + "  recuring Vareity=" + recuring_vareity);
 
                         foreach (string contactName in pickedContactNames)
@@ -259,7 +263,8 @@ namespace w1626661
 
         private void btnAdcontact_Click(object sender, EventArgs e)
         {
-            EventView eventViewManage = new EventView(loggedInUser);
+
+            EventView eventViewManage = new EventView(loggedInUser,false);
             this.Hide();
             eventViewManage.ShowDialog();
             this.Close();

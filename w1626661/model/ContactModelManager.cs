@@ -10,6 +10,7 @@ namespace w1626661.model
 {
     class ContactModelManager
     {
+        //add new  contact to the database
         public Boolean addContact(ContactModel contact)
         {
 
@@ -53,6 +54,7 @@ namespace w1626661.model
             }
         }
 
+        //get corresponding event contact that already save early
         internal List<ContactModel> getCheckedContacts(int event_id)
         {
             List<ContactModel> contactData = new List<ContactModel>();
@@ -117,6 +119,8 @@ namespace w1626661.model
             return contactData;
         }
 
+        //get contact list according to event id from event_contact_selection database
+        //return string list for show in summary view
         internal List<string> getContactListwithNumber(int event_id)
         {
             List<string> contactData = new List<string>();
@@ -149,8 +153,9 @@ namespace w1626661.model
                 foreach (DataRow row in dataTable.Rows)
                 {
                     Console.WriteLine(Convert.ToInt32(row["contactId"]));
+                    Console.WriteLine(event_id);
+                    String contact=null;
 
-                    
                     //dBconnection.sqlCommand.Parameters.AddWithValue("@contactId", Convert.ToInt32(row["contactId"]));
                     //dBconnection.sqlCommand.Parameters.AddWithValue("@eventId", Convert.ToInt32(row["eventId"]));
                     SqlDataAdapter sqlAdap = new SqlDataAdapter("SELECT * FROM Contact WHERE Id = '" + Convert.ToInt32(row["contactId"]) + "'", dBconnection.sqlConnection);
@@ -160,10 +165,11 @@ namespace w1626661.model
                     foreach (DataRow rowdata in dataTable1.Rows) {
                         
                         
-                        String contact = rowdata["name"].ToString() + "->" + rowdata["mobileNo"].ToString();
-                        contactData.Add(contact);
+                         contact = rowdata["name"].ToString() + "->" + rowdata["mobileNo"].ToString();
+                        
                     }
 
+                    contactData.Add(contact);
                 }
                 dBconnection.sqlConnection.Close();
             }
@@ -173,6 +179,7 @@ namespace w1626661.model
           
         }
 
+        //get all contacts from database
         public List<ContactModel> getAllContacts(int userId)
         {
 
@@ -219,6 +226,7 @@ namespace w1626661.model
             }
         }
 
+        //update corresponding c0ntact picked by edit contact form
         internal bool updateContact(ContactModel contact)
         {
             DBconnection dBconnection = new DBconnection();
@@ -261,6 +269,7 @@ namespace w1626661.model
             }
         }
 
+        //delete existing contact
         internal bool deleteContact(ContactModel contact)
         {
             DBconnection dBconnection = new DBconnection();
@@ -320,7 +329,10 @@ namespace w1626661.model
 
            
         }
+        
 
+        //when user wants to edit events with new contacts this methode is used to delete previous
+        //all event contact and add currently picked contacts
         internal bool deleteByEventContact(int event_id)
         {
 
@@ -369,10 +381,6 @@ namespace w1626661.model
                 return false;
             }
           
-
-
-
-
 
 
         }

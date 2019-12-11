@@ -12,6 +12,9 @@ using w1626661.model;
 
 namespace w1626661
 {
+    //contact view show all corresponding contacts that already inserted by user
+    //contact dadta will show dynamically
+    //there is also delete and edit button with each dynamic contact view cotroller
     public partial class ContactView : Form
     {
         UserModel loggedInUser;

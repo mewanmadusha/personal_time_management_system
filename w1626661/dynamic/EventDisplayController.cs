@@ -168,5 +168,10 @@ namespace w1626661.dynamic
         {
 
         }
+
+        private void lblContact_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

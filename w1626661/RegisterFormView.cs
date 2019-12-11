@@ -62,7 +62,10 @@ namespace w1626661
                     UserModel userModel = new UserModel();
                     userModel.Name = nametxt.Text;
                     userModel.UserName = usernametxt.Text;
-                    userModel.Password = passwordtxt.Text;
+
+                    
+                    //password encryption
+                    userModel.Password = PasswordEncryption.encryptPassword(passwordtxt.Text);
 
                     UserModelManager userModelManager = new UserModelManager();
                     Boolean status = userModelManager.registerUser(userModel);
@@ -74,13 +77,13 @@ namespace w1626661
                     }
                     else
                     {
-                        MessageBox.Show("ERROR" + " Database Error");
+                        MessageBox.Show("This user was already registered");
                     }
 
                 }
                 catch (Exception err)
                 {
-                    MessageBox.Show("ERROR" + err);
+                    MessageBox.Show("ERROR" + "DB error");
                 }
             }
         }

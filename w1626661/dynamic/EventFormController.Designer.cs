@@ -86,7 +86,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.52713F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 71.47287F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 32F));
             this.tableLayoutPanel2.Controls.Add(this.label16, 0, 7);
             this.tableLayoutPanel2.Controls.Add(this.label11, 0, 6);
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 1);
@@ -177,7 +177,7 @@
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(574, 57);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(573, 57);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // typeAppointment
@@ -198,7 +198,7 @@
             this.typeTask.AutoSize = true;
             this.typeTask.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.typeTask.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(254)))));
-            this.typeTask.Location = new System.Drawing.Point(290, 3);
+            this.typeTask.Location = new System.Drawing.Point(289, 3);
             this.typeTask.Name = "typeTask";
             this.typeTask.Size = new System.Drawing.Size(67, 25);
             this.typeTask.TabIndex = 1;
@@ -255,7 +255,7 @@
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(574, 57);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(573, 57);
             this.tableLayoutPanel4.TabIndex = 20;
             // 
             // label7
@@ -313,7 +313,7 @@
             this.tableLayoutPanel5.RowCount = 2;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(574, 57);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(573, 57);
             this.tableLayoutPanel5.TabIndex = 21;
             // 
             // endTimetxt
@@ -370,7 +370,7 @@
             this.tableLayoutPanel7.RowCount = 1;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 78F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(574, 78);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(573, 78);
             this.tableLayoutPanel7.TabIndex = 25;
             // 
             // tableLayoutPanel6
@@ -391,7 +391,7 @@
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(281, 72);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(280, 72);
             this.tableLayoutPanel6.TabIndex = 24;
             // 
             // typeOnetime
@@ -469,7 +469,7 @@
             this.tableLayoutPanel8.Controls.Add(this.label15, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.recureFreq, 1, 0);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(290, 3);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(289, 3);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 2;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -531,7 +531,6 @@
             this.contactCheckedListBox.Name = "contactCheckedListBox";
             this.contactCheckedListBox.Size = new System.Drawing.Size(430, 55);
             this.contactCheckedListBox.TabIndex = 29;
-            this.contactCheckedListBox.Validating += new System.ComponentModel.CancelEventHandler(this.contactCheckedListBox_Validating);
             // 
             // locationtxt
             // 
@@ -553,7 +552,7 @@
             this.tableLayoutPanel9.RowCount = 2;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(574, 81);
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(573, 81);
             this.tableLayoutPanel9.TabIndex = 33;
             // 
             // btnEventCreate
@@ -561,7 +560,7 @@
             this.btnEventCreate.BackColor = System.Drawing.Color.White;
             this.btnEventCreate.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnEventCreate.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEventCreate.Location = new System.Drawing.Point(385, 43);
+            this.btnEventCreate.Location = new System.Drawing.Point(384, 43);
             this.btnEventCreate.Name = "btnEventCreate";
             this.btnEventCreate.Size = new System.Drawing.Size(186, 35);
             this.btnEventCreate.TabIndex = 32;

@@ -10,6 +10,8 @@ namespace w1626661.model
 {
     class PredictionModelManager
     {
+        //for the prediction get past events form current date time
+        //with acending order
         internal List<EventModel> getAllPastEvents(UserModel loggedInUser)
         {
             List<EventModel> eventModelsList = new List<EventModel>();

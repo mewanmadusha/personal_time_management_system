@@ -10,26 +10,51 @@ namespace w1626661.model
 {
     class UserModelManager
     {
+        //register user with password encryption
+        //also check user name alredy picked or not
         public Boolean registerUser(UserModel user) {
 
             DBconnection dBconnection = new DBconnection();
             dBconnection.sqlConnection.ConnectionString = dBconnection.dataString;
-            dBconnection.sqlConnection.Open();
+
+            Boolean alreadyHavingUser = false;
+
+            string checkAlreadyUsername= "SELECT * FROM Users WHERE UserName = '" + user.UserName + "'";
 
             string register_user = "INSERT INTO Users (name, username, password) " +
                                      "Values (@data1, @data2, @data3)";
-            
+
+            try {
+                dBconnection.sqlCommand.Connection = dBconnection.sqlConnection;
+
+
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(checkAlreadyUsername, dBconnection.sqlConnection);
+
+
+                DataTable dataTable = new DataTable();
+                sqlDataAdapter.Fill(dataTable);
+                if (dataTable.Rows.Count>0)
+                {
+                    alreadyHavingUser = true;
+                }
                
-         
+            }
+            catch (Exception ex) {
+                dBconnection.sqlConnection.Close();
+            }
+
+            if (alreadyHavingUser!=true)
+            {
                 try
                 {
+                    dBconnection.sqlConnection.Open();
                     dBconnection.sqlCommand.Connection = dBconnection.sqlConnection;
                     dBconnection.sqlCommand.CommandText = register_user;
 
                     dBconnection.sqlCommand.Parameters.AddWithValue("@data1", user.Name);
                     dBconnection.sqlCommand.Parameters.AddWithValue("@data2", user.UserName);
                     dBconnection.sqlCommand.Parameters.AddWithValue("@data3", user.Password);
-              
+
 
                     int rowsAdded = dBconnection.sqlCommand.ExecuteNonQuery();
 
@@ -50,6 +75,12 @@ namespace w1626661.model
                     return false;
                 }
             }
+            else {
+                return false;
+            }
+            }
+
+        //login user with password decription
         public Boolean loginUser(string username,string password) {
 
             DBconnection dBconnection = new DBconnection();
@@ -75,7 +106,7 @@ namespace w1626661.model
 
              foreach (DataRow row in dataTable.Rows)
                 {
-                    string loginpassword = row["password"].ToString();
+                    string loginpassword = PasswordEncryption.decryptPassword(row["password"].ToString());
                     if (loginpassword.Equals(password))
                     {
                         return true;

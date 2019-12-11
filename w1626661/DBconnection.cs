@@ -11,7 +11,10 @@ namespace w1626661
     {
         public SqlConnection sqlConnection = new SqlConnection();
         public SqlCommand sqlCommand = new SqlCommand();
+        //public string dataString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\madus\OneDrive\Desktop\CW_DEPLOY\w1626661\w1626661\EAD_w1626661.mdf';Integrated Security=True";
+
         public string dataString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\madus\source\repos\w1626661\w1626661\EAD_w1626661.mdf';Integrated Security=True";
+
     }
 }
     

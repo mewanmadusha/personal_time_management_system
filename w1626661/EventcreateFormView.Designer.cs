@@ -182,7 +182,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.52713F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 71.47287F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 32F));
             this.tableLayoutPanel2.Controls.Add(this.label16, 0, 7);
             this.tableLayoutPanel2.Controls.Add(this.label11, 0, 6);
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 1);
@@ -273,7 +273,7 @@
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 58F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(433, 58);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(432, 58);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // typeAppointment
@@ -351,7 +351,7 @@
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(433, 58);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(432, 58);
             this.tableLayoutPanel4.TabIndex = 20;
             // 
             // label7
@@ -370,7 +370,7 @@
             this.startDatetxt.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.startDatetxt.Location = new System.Drawing.Point(3, 32);
             this.startDatetxt.Name = "startDatetxt";
-            this.startDatetxt.Size = new System.Drawing.Size(240, 23);
+            this.startDatetxt.Size = new System.Drawing.Size(239, 23);
             this.startDatetxt.TabIndex = 22;
             // 
             // label8
@@ -378,7 +378,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(254)))));
-            this.label8.Location = new System.Drawing.Point(249, 0);
+            this.label8.Location = new System.Drawing.Point(248, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(52, 21);
             this.label8.TabIndex = 21;
@@ -388,7 +388,7 @@
             // 
             this.startTimetxt.CustomFormat = "  ";
             this.startTimetxt.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.startTimetxt.Location = new System.Drawing.Point(249, 32);
+            this.startTimetxt.Location = new System.Drawing.Point(248, 32);
             this.startTimetxt.Name = "startTimetxt";
             this.startTimetxt.ShowUpDown = true;
             this.startTimetxt.Size = new System.Drawing.Size(181, 22);
@@ -409,14 +409,14 @@
             this.tableLayoutPanel5.RowCount = 2;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(433, 58);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(432, 58);
             this.tableLayoutPanel5.TabIndex = 21;
             // 
             // endTimetxt
             // 
             this.endTimetxt.CustomFormat = "  ";
             this.endTimetxt.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.endTimetxt.Location = new System.Drawing.Point(249, 32);
+            this.endTimetxt.Location = new System.Drawing.Point(248, 32);
             this.endTimetxt.Name = "endTimetxt";
             this.endTimetxt.ShowUpDown = true;
             this.endTimetxt.Size = new System.Drawing.Size(181, 22);
@@ -428,7 +428,7 @@
             this.endDatetxt.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.endDatetxt.Location = new System.Drawing.Point(3, 32);
             this.endDatetxt.Name = "endDatetxt";
-            this.endDatetxt.Size = new System.Drawing.Size(240, 23);
+            this.endDatetxt.Size = new System.Drawing.Size(239, 23);
             this.endDatetxt.TabIndex = 23;
             // 
             // label9
@@ -447,7 +447,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(254)))));
-            this.label10.Location = new System.Drawing.Point(249, 0);
+            this.label10.Location = new System.Drawing.Point(248, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(52, 21);
             this.label10.TabIndex = 22;
@@ -466,7 +466,7 @@
             this.tableLayoutPanel7.RowCount = 1;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 79F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(433, 79);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(432, 79);
             this.tableLayoutPanel7.TabIndex = 25;
             // 
             // tableLayoutPanel6
@@ -570,7 +570,7 @@
             this.tableLayoutPanel8.RowCount = 2;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(211, 73);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(210, 73);
             this.tableLayoutPanel8.TabIndex = 25;
             // 
             // label15
@@ -588,7 +588,7 @@
             // 
             this.recureFreq.Location = new System.Drawing.Point(108, 3);
             this.recureFreq.Name = "recureFreq";
-            this.recureFreq.Size = new System.Drawing.Size(100, 22);
+            this.recureFreq.Size = new System.Drawing.Size(99, 22);
             this.recureFreq.TabIndex = 24;
             // 
             // label12
@@ -606,7 +606,7 @@
             // 
             this.eventTitletxt.Location = new System.Drawing.Point(178, 67);
             this.eventTitletxt.Name = "eventTitletxt";
-            this.eventTitletxt.Size = new System.Drawing.Size(433, 54);
+            this.eventTitletxt.Size = new System.Drawing.Size(432, 54);
             this.eventTitletxt.TabIndex = 26;
             this.eventTitletxt.Text = "";
             this.eventTitletxt.Validating += new System.ComponentModel.CancelEventHandler(this.eventTitletxt_Validating);
@@ -615,7 +615,7 @@
             // 
             this.eventDescriptiontxt.Location = new System.Drawing.Point(178, 131);
             this.eventDescriptiontxt.Name = "eventDescriptiontxt";
-            this.eventDescriptiontxt.Size = new System.Drawing.Size(433, 58);
+            this.eventDescriptiontxt.Size = new System.Drawing.Size(432, 58);
             this.eventDescriptiontxt.TabIndex = 27;
             this.eventDescriptiontxt.Text = "";
             this.eventDescriptiontxt.Validating += new System.ComponentModel.CancelEventHandler(this.eventDescriptiontxt_Validating);
@@ -627,13 +627,12 @@
             this.contactCheckedListBox.Name = "contactCheckedListBox";
             this.contactCheckedListBox.Size = new System.Drawing.Size(430, 55);
             this.contactCheckedListBox.TabIndex = 29;
-            this.contactCheckedListBox.Validating += new System.ComponentModel.CancelEventHandler(this.contactCheckedListBox_Validating);
             // 
             // locationtxt
             // 
             this.locationtxt.Location = new System.Drawing.Point(178, 474);
             this.locationtxt.Name = "locationtxt";
-            this.locationtxt.Size = new System.Drawing.Size(433, 22);
+            this.locationtxt.Size = new System.Drawing.Size(432, 22);
             this.locationtxt.TabIndex = 31;
             this.locationtxt.Validating += new System.ComponentModel.CancelEventHandler(this.locationtxt_Validating);
             // 
@@ -650,7 +649,7 @@
             this.tableLayoutPanel9.RowCount = 2;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(433, 79);
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(432, 79);
             this.tableLayoutPanel9.TabIndex = 33;
             // 
             // btnEventCreate
@@ -658,7 +657,7 @@
             this.btnEventCreate.BackColor = System.Drawing.Color.White;
             this.btnEventCreate.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnEventCreate.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEventCreate.Location = new System.Drawing.Point(291, 42);
+            this.btnEventCreate.Location = new System.Drawing.Point(290, 42);
             this.btnEventCreate.Name = "btnEventCreate";
             this.btnEventCreate.Size = new System.Drawing.Size(139, 34);
             this.btnEventCreate.TabIndex = 32;
@@ -671,7 +670,7 @@
             this.btnUpdateEvent.BackColor = System.Drawing.Color.White;
             this.btnUpdateEvent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnUpdateEvent.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateEvent.Location = new System.Drawing.Point(291, 3);
+            this.btnUpdateEvent.Location = new System.Drawing.Point(290, 3);
             this.btnUpdateEvent.Name = "btnUpdateEvent";
             this.btnUpdateEvent.Size = new System.Drawing.Size(139, 33);
             this.btnUpdateEvent.TabIndex = 33;

@@ -152,7 +152,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 76.24634F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.75367F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 293F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.tableLayoutPanel2.Controls.Add(this.label7, 0, 4);
             this.tableLayoutPanel2.Controls.Add(this.label3, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label4, 0, 1);
@@ -242,7 +242,7 @@
             this.tableLayoutPanel3.Controls.Add(this.label6, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.lblAvgHoursPerEvent, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(343, 106);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(342, 106);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -279,7 +279,7 @@
             this.tableLayoutPanel4.Controls.Add(this.label9, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.lblMeanTimeperWeek, 1, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(343, 329);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(342, 329);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -316,7 +316,7 @@
             this.tableLayoutPanel5.Controls.Add(this.label10, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.lblAvgTimePerMonth, 1, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(343, 422);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(342, 422);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -350,7 +350,7 @@
             this.lblAvgEventsPerWeek.AutoSize = true;
             this.lblAvgEventsPerWeek.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblAvgEventsPerWeek.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAvgEventsPerWeek.Location = new System.Drawing.Point(343, 217);
+            this.lblAvgEventsPerWeek.Location = new System.Drawing.Point(342, 217);
             this.lblAvgEventsPerWeek.Name = "lblAvgEventsPerWeek";
             this.lblAvgEventsPerWeek.Size = new System.Drawing.Size(287, 109);
             this.lblAvgEventsPerWeek.TabIndex = 6;
@@ -361,7 +361,7 @@
             this.lblNoOfPastEvent.AutoSize = true;
             this.lblNoOfPastEvent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblNoOfPastEvent.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNoOfPastEvent.Location = new System.Drawing.Point(343, 0);
+            this.lblNoOfPastEvent.Location = new System.Drawing.Point(342, 0);
             this.lblNoOfPastEvent.Name = "lblNoOfPastEvent";
             this.lblNoOfPastEvent.Size = new System.Drawing.Size(287, 103);
             this.lblNoOfPastEvent.TabIndex = 4;
@@ -371,7 +371,7 @@
             // 
             this.roundButton1.BackColor = System.Drawing.Color.White;
             this.roundButton1.ForeColor = System.Drawing.Color.Black;
-            this.roundButton1.Location = new System.Drawing.Point(343, 516);
+            this.roundButton1.Location = new System.Drawing.Point(342, 516);
             this.roundButton1.Name = "roundButton1";
             this.roundButton1.Size = new System.Drawing.Size(203, 48);
             this.roundButton1.TabIndex = 14;

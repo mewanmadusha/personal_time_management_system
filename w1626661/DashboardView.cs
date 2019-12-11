@@ -13,6 +13,8 @@ using w1626661.model;
 
 namespace w1626661
 {
+    //implement all function buttons in dash board
+    //also show following week events dynamically in application dashboard
     public partial class DashboardView : Form
     {
         UserModel loggedInUser;
@@ -95,7 +97,8 @@ namespace w1626661
 
         private void btnManageEvent_Click(object sender, EventArgs e)
         {
-            EventView eventViewManage = new EventView(loggedInUser);
+            Boolean pastEvent = false;
+            EventView eventViewManage = new EventView(loggedInUser,pastEvent);
             this.Hide();
             eventViewManage.ShowDialog();
             this.Close();
@@ -103,10 +106,23 @@ namespace w1626661
 
         private void btnPrediction_Click(object sender, EventArgs e)
         {
-            PredictionTimeView predictionTimeView = new PredictionTimeView(loggedInUser);
-            this.Hide();
-            predictionTimeView.ShowDialog();
-            this.Close();
+            PredictionModelManager predictionModelManager = new PredictionModelManager();
+
+            List<EventModel> eventModelList = new List<EventModel>();
+
+            eventModelList = predictionModelManager.getAllPastEvents(loggedInUser);
+
+            if (eventModelList.Count != 0)
+            {
+
+                PredictionTimeView predictionTimeView = new PredictionTimeView(loggedInUser);
+                this.Hide();
+                predictionTimeView.ShowDialog();
+                this.Close();
+            }
+            else {
+                MessageBox.Show("There are no past Events");
+            }
         }
 
         private void roundButton1_Click(object sender, EventArgs e)
@@ -122,6 +138,15 @@ namespace w1626661
             LoginFormView loginFormView = new LoginFormView();
             this.Hide();
             loginFormView.ShowDialog();
+            this.Close();
+        }
+
+        private void btnPastEvents_Click(object sender, EventArgs e)
+        {
+            Boolean pastEvent = true;
+            EventView eventViewManage = new EventView(loggedInUser, pastEvent);
+            this.Hide();
+            eventViewManage.ShowDialog();
             this.Close();
         }
     }

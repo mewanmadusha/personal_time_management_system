@@ -31,13 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EventView));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.headinglbl = new System.Windows.Forms.Label();
             this.btnHome = new System.Windows.Forms.Button();
-            this.btnAdcontact = new w1626661.dynamic.RoundButton();
+            this.btnAdEvent = new w1626661.dynamic.RoundButton();
             this.lablename = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnGenarateMonth = new w1626661.dynamic.RoundButton();
+            this.btnGenarateWeek = new w1626661.dynamic.RoundButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -61,9 +63,11 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(254)))));
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.btnGenarateWeek);
+            this.panel1.Controls.Add(this.btnGenarateMonth);
+            this.panel1.Controls.Add(this.headinglbl);
             this.panel1.Controls.Add(this.btnHome);
-            this.panel1.Controls.Add(this.btnAdcontact);
+            this.panel1.Controls.Add(this.btnAdEvent);
             this.panel1.Controls.Add(this.lablename);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -73,16 +77,17 @@
             this.panel1.Size = new System.Drawing.Size(300, 587);
             this.panel1.TabIndex = 1;
             // 
-            // label2
+            // headinglbl
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(37, 20);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(208, 28);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "MANAGE EVENTS";
+            this.headinglbl.AutoSize = true;
+            this.headinglbl.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.headinglbl.ForeColor = System.Drawing.Color.White;
+            this.headinglbl.Location = new System.Drawing.Point(20, 15);
+            this.headinglbl.Name = "headinglbl";
+            this.headinglbl.Size = new System.Drawing.Size(254, 19);
+            this.headinglbl.TabIndex = 10;
+            this.headinglbl.Text = "MANAGE UPCOMING  EVENTS";
+            this.headinglbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnHome
             // 
@@ -95,17 +100,18 @@
             this.btnHome.UseVisualStyleBackColor = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
-            // btnAdcontact
+            // btnAdEvent
             // 
-            this.btnAdcontact.BackColor = System.Drawing.Color.White;
-            this.btnAdcontact.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdcontact.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(254)))));
-            this.btnAdcontact.Location = new System.Drawing.Point(55, 400);
-            this.btnAdcontact.Name = "btnAdcontact";
-            this.btnAdcontact.Size = new System.Drawing.Size(180, 52);
-            this.btnAdcontact.TabIndex = 7;
-            this.btnAdcontact.Text = "ADD EVENT";
-            this.btnAdcontact.UseVisualStyleBackColor = false;
+            this.btnAdEvent.BackColor = System.Drawing.Color.White;
+            this.btnAdEvent.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdEvent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(254)))));
+            this.btnAdEvent.Location = new System.Drawing.Point(55, 400);
+            this.btnAdEvent.Name = "btnAdEvent";
+            this.btnAdEvent.Size = new System.Drawing.Size(180, 52);
+            this.btnAdEvent.TabIndex = 7;
+            this.btnAdEvent.Text = "ADD NEW EVENT";
+            this.btnAdEvent.UseVisualStyleBackColor = false;
+            this.btnAdEvent.Click += new System.EventHandler(this.btnAdcontact_Click);
             // 
             // lablename
             // 
@@ -148,6 +154,32 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(669, 587);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
+            // btnGenarateMonth
+            // 
+            this.btnGenarateMonth.BackColor = System.Drawing.Color.Transparent;
+            this.btnGenarateMonth.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenarateMonth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(254)))));
+            this.btnGenarateMonth.Location = new System.Drawing.Point(55, 255);
+            this.btnGenarateMonth.Name = "btnGenarateMonth";
+            this.btnGenarateMonth.Size = new System.Drawing.Size(180, 52);
+            this.btnGenarateMonth.TabIndex = 11;
+            this.btnGenarateMonth.Text = "Following Month Events Report";
+            this.btnGenarateMonth.UseVisualStyleBackColor = false;
+            this.btnGenarateMonth.Click += new System.EventHandler(this.btnGenarateMonth_Click);
+            // 
+            // btnGenarateWeek
+            // 
+            this.btnGenarateWeek.BackColor = System.Drawing.Color.Transparent;
+            this.btnGenarateWeek.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenarateWeek.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(254)))));
+            this.btnGenarateWeek.Location = new System.Drawing.Point(55, 313);
+            this.btnGenarateWeek.Name = "btnGenarateWeek";
+            this.btnGenarateWeek.Size = new System.Drawing.Size(180, 52);
+            this.btnGenarateWeek.TabIndex = 12;
+            this.btnGenarateWeek.Text = "Following Week Events Report";
+            this.btnGenarateWeek.UseVisualStyleBackColor = false;
+            this.btnGenarateWeek.Click += new System.EventHandler(this.btnGenarateWeek_Click);
+            // 
             // EventView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -169,12 +201,14 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label headinglbl;
         private System.Windows.Forms.Button btnHome;
-        private dynamic.RoundButton btnAdcontact;
+        private dynamic.RoundButton btnAdEvent;
         private System.Windows.Forms.Label lablename;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private dynamic.RoundButton btnGenarateWeek;
+        private dynamic.RoundButton btnGenarateMonth;
     }
 }

@@ -157,6 +157,7 @@
     <Compile Include="model\PredictionModelManager.cs" />
     <Compile Include="model\UserModel.cs" />
     <Compile Include="model\UserModelManager.cs" />
+    <Compile Include="PasswordEncryption.cs" />
     <Compile Include="PredictionTimeView.cs">
       <SubType>Form</SubType>
     </Compile>

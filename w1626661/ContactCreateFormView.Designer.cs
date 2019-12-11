@@ -201,7 +201,7 @@
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.Name = "ContactcreateFormView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "EventView";
+            this.Text = "CreateContact";
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.selectNumber)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);

@@ -12,13 +12,15 @@ using w1626661.model;
 
 namespace w1626661
 {
+    //prediction time view 
+    //user able to view events and also user able to genarate report with prediction result
     public partial class PredictionTimeView : Form
     {
         UserModel loggedInUser;
         double SE_allEventCount = 0;
         double ST_eventHours = 0;
         double MT_avgTimeperEvent = 0;
-        double NW_numberOfWeeks = 0;
+       
         double EW_eventsPerWeeek = 0;
         double NW_numberofWeeks = 0;
         double MTPW_meanTimeUsagePerWeek = 0;
@@ -45,7 +47,7 @@ namespace w1626661
 
             eventModelList= predictionModelManager.getAllPastEvents(loggedInUser);
 
-            if (eventModelList != null)
+            if (eventModelList.Count != 0 )
             {
                 SE_allEventCount = eventModelList.Count();
                 foreach (EventModel eventModel in eventModelList)
@@ -89,10 +91,9 @@ namespace w1626661
             else {
 
                 MessageBox.Show("There are no past Events");
-                DashboardView dashboardView = new DashboardView(loggedInUser);
-                this.Hide();
-                dashboardView.ShowDialog();
-                this.Close();
+               
+                
+              
             }
 
         }
@@ -102,42 +103,61 @@ namespace w1626661
 
         }
 
+        //file writing methode
         private async void roundButton1_ClickAsync(object sender, EventArgs e)
         {
-            Console.WriteLine("Start");
-            var time = await Task.Run(() => this.predictionTimeGenarate());
-            MessageBox.Show("Successfully Genarate File");
+           
+
+            SaveFileDialog fileLocation = new SaveFileDialog();
+
+            fileLocation.Filter = "txt files (*.txt)|*.txt|dat files (*.dat)|*.dat"; // or just "txt files (*.txt)|*.txt" if you only want to save text files
+            fileLocation.FilterIndex = 2;
+            fileLocation.RestoreDirectory = true;
+
+            if (fileLocation.ShowDialog() == DialogResult.OK)
+            {
+
+                Console.WriteLine("Start");
+                var time = await Task.Run(() => this.predictionTimeGenarateTxt(fileLocation.FileName));
+                MessageBox.Show("Successfully Genarate File");
+
+            }
+            
+
         }
 
-        private int predictionTimeGenarate()
+         
+
+        private int predictionTimeGenarateTxt(string fileName)
         {
             
-            StreamWriter sw = new StreamWriter("PredictionReport.dat", false, Encoding.UTF8);     
+
+            StreamWriter sw = new StreamWriter(fileName, false, Encoding.UTF8);
 
             try
             {
-                sw.WriteLine("Today is : " + DateTime.Now + "\n" + "Name :"+loggedInUser.Name+"\n\n");
+                sw.WriteLine("Today is : " + DateTime.Now + "\n" + "Name :" + loggedInUser.Name + "\n\n");
                 sw.WriteLine("--------------EVENT MANAGEMENT TIME PREDICTION RESULT-------------");
 
                 sw.WriteLine("\n");
                 sw.WriteLine("-------------------------------------------------------------------");
-           
-                sw.WriteLine("Number Of Past Events            |  "+ Convert.ToString(SE_allEventCount));
+
+                sw.WriteLine("Number Of Past Events            |  " + Convert.ToString(SE_allEventCount));
                 sw.WriteLine("\n");
                 sw.WriteLine("-------------------------------------------------------------------");
-            
-                sw.WriteLine("Average Hours per Event          |  " + Convert.ToString(Convert.ToInt32(MT_avgTimeperEvent) / 60) + ":" + Convert.ToString(Convert.ToInt32(MT_avgTimeperEvent) % 60)+"  Hours/event");
+
+                sw.WriteLine("Average Hours per Event          |  " + Convert.ToString(Convert.ToInt32(MT_avgTimeperEvent) / 60) + ":" + Convert.ToString(Convert.ToInt32(MT_avgTimeperEvent) % 60) + "  Hours/event");
                 sw.WriteLine("\n");
                 sw.WriteLine("-------------------------------------------------------------------");
-              
+
                 sw.WriteLine("Average Events per Week          |  " + Convert.ToString(EW_eventsPerWeeek) + "  Events/Week");
                 sw.WriteLine("\n");
                 sw.WriteLine("-------------------------------------------------------------------");
-             
+
                 sw.WriteLine("Mean Time Usage Per Week         |  " + Convert.ToString(Convert.ToInt32(MTPW_meanTimeUsagePerWeek) / 60) + ":" + Convert.ToString(Convert.ToInt32(MTPW_meanTimeUsagePerWeek) % 60) + "  Hours/Week");
                 sw.WriteLine("\n");
                 sw.WriteLine("-------------------------------------------------------------------");
-         
+
                 sw.WriteLine("*******Average Hours per Month   |  " + Convert.ToString(Convert.ToInt32(prediction_followingFourWeek) / 60) + ":" + Convert.ToString(Convert.ToInt32(prediction_followingFourWeek) % 60) + "  Hours/Month********");
                 sw.WriteLine("\n");
                 sw.WriteLine("-------------------------------------------------------------------");

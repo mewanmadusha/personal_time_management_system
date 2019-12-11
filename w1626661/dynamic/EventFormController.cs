@@ -232,20 +232,10 @@ namespace w1626661.dynamic
                 }
             }
 
-        private void contactCheckedListBox_Validating(object sender, CancelEventArgs e)
-        {
+        //private void contactCheckedListBox_Validating(object sender, CancelEventArgs e)
+        //{
 
-            if (contactCheckedListBox.CheckedIndices.Count == 0)
-            {
-                ep.SetError(contactCheckedListBox, "Pick atleast one contact");
-                e.Cancel = true;
-            }
-            else
-            {
-
-                ep.SetError(contactCheckedListBox, "");
-            }
-        }
+        //}
 
         private void locationtxt_Validating(object sender, CancelEventArgs e)
         {

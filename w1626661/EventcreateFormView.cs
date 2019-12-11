@@ -571,21 +571,21 @@ namespace w1626661
             }
         }
 
-        private void contactCheckedListBox_Validating(object sender, CancelEventArgs e)
-        {
-          
-                if (contactCheckedListBox.CheckedIndices.Count == 0)
-                {
-                    errorProvidereventCreate.SetError(contactCheckedListBox, "Pick atleast one contact");
-                    e.Cancel = true;
-                }
-                else
-                {
+        //private void contactCheckedListBox_Validating(object sender, CancelEventArgs e)
+        //{
 
-                    errorProvidereventCreate.SetError(contactCheckedListBox, "");
-                }
-           
-        }
+        //    if (contactCheckedListBox.CheckedIndices.Count == 0)
+        //    {
+        //        errorProvidereventCreate.SetError(contactCheckedListBox, "Pick atleast one contact");
+        //        e.Cancel = true;
+        //    }
+        //    else
+        //    {
+
+        //        errorProvidereventCreate.SetError(contactCheckedListBox, "");
+        //    }
+
+        //}
 
         private void btnUpdateEvent_Click(object sender, EventArgs e)
         {
@@ -607,8 +607,9 @@ namespace w1626661
                   
                         /////////////////initialize data
                         List<ContactModel> pickedContactsList = new List<ContactModel>();
-                        //int recuring_variety = 1; //default recuring one time
-                        string event_variety = "";//appoinment or task
+                        
+                    //int recuring_variety = 1; //default recuring one time
+                    string event_variety = "";//appoinment or task
 
 
 

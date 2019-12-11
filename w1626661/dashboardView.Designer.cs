@@ -45,6 +45,7 @@
             this.roundedLable1 = new w1626661.dynamic.RoundedPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnPastEvents = new w1626661.dynamic.RoundButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -71,6 +72,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(254)))));
+            this.panel1.Controls.Add(this.btnPastEvents);
             this.panel1.Controls.Add(this.roundButton2);
             this.panel1.Controls.Add(this.roundButton1);
             this.panel1.Controls.Add(this.btnPrediction);
@@ -91,7 +93,7 @@
             this.roundButton2.BackColor = System.Drawing.Color.White;
             this.roundButton2.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(254)))));
-            this.roundButton2.Location = new System.Drawing.Point(97, 567);
+            this.roundButton2.Location = new System.Drawing.Point(96, 634);
             this.roundButton2.Name = "roundButton2";
             this.roundButton2.Size = new System.Drawing.Size(128, 52);
             this.roundButton2.TabIndex = 13;
@@ -251,6 +253,19 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(732, 647);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
+            // btnPastEvents
+            // 
+            this.btnPastEvents.BackColor = System.Drawing.Color.White;
+            this.btnPastEvents.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPastEvents.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(254)))));
+            this.btnPastEvents.Location = new System.Drawing.Point(68, 529);
+            this.btnPastEvents.Name = "btnPastEvents";
+            this.btnPastEvents.Size = new System.Drawing.Size(180, 52);
+            this.btnPastEvents.TabIndex = 14;
+            this.btnPastEvents.Text = "PAST EVENTS";
+            this.btnPastEvents.UseVisualStyleBackColor = false;
+            this.btnPastEvents.Click += new System.EventHandler(this.btnPastEvents_Click);
+            // 
             // DashboardView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -290,5 +305,6 @@
         private dynamic.RoundedPanel roundedLable1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private dynamic.RoundButton btnPastEvents;
     }
 }

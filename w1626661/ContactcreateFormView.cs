@@ -12,6 +12,8 @@ using w1626661.model;
 
 namespace w1626661
 {
+    //contact create form view use to add new contact to the application
+    //add contact form will dynamically show via contact form display controller
     public partial class ContactcreateFormView : Form
     {
         UserModel loggedInUser;
@@ -141,13 +143,13 @@ namespace w1626661
 
                 int userId = loggedInUser.Id;
 
-                MessageBox.Show(name + email + mobileNo);
+               // MessageBox.Show(name + email + mobileNo);
 
 
                 if (name != "" && email != "")
 
                 {
-                    if (MessageBox.Show("Do you wish to Add this Contact ", "Add Contact",
+                    if (MessageBox.Show("Do you wish to Update this Contact ", "Update Contact",
                   MessageBoxButtons.YesNo, MessageBoxIcon.Question,
                   MessageBoxDefaultButton.Button1) == System.Windows.Forms.DialogResult.Yes)
                     {
